@@ -55,7 +55,7 @@ export default function App() {
               className={`btn-military btn-all ${showAll ? 'btn-active' : ''}`}
               onClick={() => setShowAll(true)}
             >
-              🌍 Pokaż wszystkie warstwy naraz
+              Pokaż wszystkie warstwy naraz
             </button>
           </div>
         </div>
