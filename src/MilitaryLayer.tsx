@@ -100,8 +100,8 @@ export default function MilitaryOSMLayer() {
       <div
         style={{
           position: "absolute",
-          bottom: "10px",
-          left: "10px",
+          top: "10px",
+          right: "10px",
           zIndex: 1000,
           background: "white",
           padding: "15px",
