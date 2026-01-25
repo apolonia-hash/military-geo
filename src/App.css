@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Główne kontenery */
+.map-container {
+  height: 100vh;
+  width: 100vw;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Wspólny styl dla paneli UI */
+.ui-panel {
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font-family: sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Zadanie 1: Lewy dolny róg */
+.legend-panel {
+  bottom: 20px;
+  left: 20px;
+  min-width: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Zadanie 2: Prawy dolny róg */
+.style-panel {
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.card {
-  padding: 2em;
+/* Zadanie 3: Panel górny */
+.controls-panel {
+  top: 10px;
+  right: 10px;
+  max-width: 280px;
 }
 
-.read-the-docs {
-  color: #888;
+.btn-military {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.btn-active {
+  background: #c62828;
+  color: white;
+}
+
+.btn-all {
+  background: #2e7d32;
+  color: white;
+  margin-top: 5px;
+  width: 100%;
 }
